@@ -1,0 +1,7 @@
+{
+  "env": {
+    "NODE_ENV": "development",
+    "nixconfig_config_home": "/app"
+  },
+  "ext": "js json"
+}

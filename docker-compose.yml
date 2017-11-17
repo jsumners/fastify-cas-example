@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    volumes:
+      - '.:/app'
+    ports:
+      - '9000:9000'
+      - '9229:9229'
+    hostname: app
+    domainname: example.com
+    networks:
+      casdemo:
+        ipv4_address: 10.0.0.5
+    extra_hosts:
+      - 'cas.example.com:10.0.0.6'
+
+  cas:
+    build: ./fake-server
+    volumes:
+      - './:/app'
+    ports:
+      - '8080:8080'
+    hostname: cas
+    domainname: example.com
+    networks:
+      casdemo:
+        ipv4_address: 10.0.0.6
+
+networks:
+  casdemo:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24

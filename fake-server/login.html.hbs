@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fake CAS Server</title>
+</head>
+<body>
+  <p>
+    This is not a real CAS server. Normally you would expect a
+    a username and password field here. Instead, just click the button to
+    "login".
+  </p>
+  <form action="/login" method="POST">
+    <input type="hidden" name="service" value="{{service}}">
+    <button type="submit" value="login">Log me in!</button>
+  </form>
+</body>
+</html>

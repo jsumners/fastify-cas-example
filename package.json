@@ -1,0 +1,30 @@
+{
+  "name": "fastify-cas-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --verbose --inspect=0.0.0.0:9229 -L /app",
+    "fakecas": "cd fake-server && node server.js",
+    "test": "tap 'test/**/*.test.js'"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.3",
+    "tap": "^10.7.3"
+  },
+  "dependencies": {
+    "fastify": "^0.34.0",
+    "fastify-caching": "^1.1.0",
+    "fastify-cas": "^1.0.0-pre.4",
+    "fastify-cookie": "^1.1.1",
+    "fastify-formbody": "^1.0.1",
+    "fastify-server-session": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "isdebug": "^0.1.1",
+    "nixconfig": "^1.0.1"
+  }
+}
