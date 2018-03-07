@@ -11,18 +11,18 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^1.14.12",
-    "snazzy": "^7.0.0",
-    "standard": "^10.0.3",
-    "tap": "^11.1.0"
+    "nodemon": "^1.17.1",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.0",
+    "tap": "^11.1.1"
   },
   "dependencies": {
-    "fastify": "^1.0.0-rc.1",
-    "fastify-caching": "^2.0.3",
-    "fastify-cas": "^1.0.2",
-    "fastify-cookie": "^1.2.1",
-    "fastify-formbody": "^1.2.4",
-    "fastify-server-session": "^1.0.6",
+    "fastify": "^1.1.0",
+    "fastify-caching": "^3.0.0",
+    "fastify-cas": "^2.0.0",
+    "fastify-cookie": "^2.0.0",
+    "fastify-formbody": "^2.0.0",
+    "fastify-server-session": "^2.0.0",
     "handlebars": "^4.0.11",
     "isdebug": "^1.0.0",
     "nixconfig": "^1.1.0"
